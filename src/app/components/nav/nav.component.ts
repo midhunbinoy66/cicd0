@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
+  @Output() sectionSelector = new EventEmitter<number>()
 
+  navigteMe(target:number){
+    this.sectionSelector.emit(target)
+  }
 }

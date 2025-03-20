@@ -1,5 +1,5 @@
-<app-nav></app-nav>
-<app-terminal></app-terminal>
-<app-aboutme></app-aboutme>
-<app-projects></app-projects>
-<app-messageme></app-messageme>
+<app-nav (sectionSelector)="navigateEmitter($event)"></app-nav>
+<app-terminal (sectionSelector)="navigateEmitter($event)"></app-terminal>
+<div #aboutMe><app-aboutme ></app-aboutme> </div>
+<div #project><app-projects ></app-projects></div>
+<div #messageMe><app-messageme ></app-messageme> </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-terminal',
@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 })
 export class TerminalComponent {
 
+  @Output() sectionSelector = new EventEmitter<number>()
+
   navigteMe(target:number){
-    if(target==1){
-      window.scroll(50,50)
-    }
+    this.sectionSelector.emit(target)
   }
 }

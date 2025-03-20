@@ -4,11 +4,12 @@ import { NavComponent } from './components/nav/nav.component';
 import { TerminalComponent } from './components/terminal/terminal.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { MessagemeComponent } from './components/messageme/messageme.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavComponent,TerminalComponent,AboutmeComponent,ProjectsComponent],
+  imports: [RouterOutlet,NavComponent,TerminalComponent,AboutmeComponent,ProjectsComponent,MessagemeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -32,7 +32,7 @@ pipeline {
 
         stage('Deploy to Server') {
             steps {
-                sh 'cp -r dist/cicd0/* /var/www/html/' 
+                sh 'cp -r dist/cicd0/* /var/www/angular-app/' 
                 sh 'sudo systemctl restart nginx'  
             }
         }

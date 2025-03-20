@@ -2,15 +2,6 @@ pipeline {
     agent any  
 
     stages {
-        stage('Setup Node.js & Angular') {
-            steps {
-                sh 'curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -'  
-                sh 'sudo apt install -y nodejs'
-                sh 'node -v'  
-                sh 'npm install -g @angular/cli'  
-                sh 'ng version'  
-            }
-        }
 
         stage('Checkout Code') {
             steps {

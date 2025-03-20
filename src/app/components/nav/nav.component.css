@@ -1,0 +1,13 @@
+.nav-tab{
+    background-color: #282828;
+    border: 2px solid #ebdbb2;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-tab:hover {
+    background-color: #ebdbb2;
+    color: #282828;
+  }

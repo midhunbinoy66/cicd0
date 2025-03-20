@@ -24,6 +24,11 @@ export class ProjectsComponent {
       title: 'Pillai’s E-commerce', 
       description: 'E-commerce application on Angular, serving clients in both the UK & India.', 
       link: 'https://pillais.quickiz.com/' 
+    },
+    { 
+      title: 'JobHive', 
+      description: 'A job platform where candidates and employer meet.Based on clean architecture.', 
+      link: 'https://github.com/midhunbinoy66/jobsHive' 
     }
   ];
 }

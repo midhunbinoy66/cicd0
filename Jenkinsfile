@@ -24,8 +24,14 @@ pipeline {
         stage('Deploy to Server') {
             steps {
                 sh 'cp -r dist/cicd0/* /var/www/angular-app/' 
-                sh 'sudo systemctl restart nginx'  
             }
         }
+
+        stage('Restart Nginx') {
+            steps {
+                 sh 'sudo /bin/systemctl restart nginx'
+             }
+        }
+
     }
 }
